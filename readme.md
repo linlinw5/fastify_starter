@@ -70,6 +70,18 @@ npm start
 - `public/` - static assets
 - `data/` - local SQLite database files
 
+## Drizzle Kit
+
+Drizzle Kit manages database schema changes.
+
+```bash
+npx drizzle-kit push      # push schema changes to the database (executes DDL)
+npx drizzle-kit pull      # reverse-generate schema.ts from an existing database
+npx drizzle-kit generate  # generate migration files
+npx drizzle-kit migrate   # run migrations
+npx drizzle-kit studio    # open visual admin UI, similar to DataGrip
+```
+
 ## Notes
 
 - The generated SQLite database file is ignored by Git.
@@ -147,6 +159,18 @@ npm start
 - `views/`：Eta 模板文件
 - `public/`：静态资源
 - `data/`：本地 SQLite 数据文件
+
+### Drizzle Kit 用法
+
+Drizzle Kit 的核心作用是管理数据库 Schema 变更。
+
+```bash
+npx drizzle-kit push      # 推送 schema 变更到数据库（执行 DDL）
+npx drizzle-kit pull      # 从现有数据库反向生成 schema.ts
+npx drizzle-kit generate  # 生成迁移文件
+npx drizzle-kit migrate   # 执行迁移
+npx drizzle-kit studio    # 打开可视化管理界面，类似 DataGrip
+```
 
 ### 备注
 

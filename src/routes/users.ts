@@ -44,7 +44,7 @@ export const usersRoutes: FastifyPluginAsyncZod = async (fastify) => {
         response: { 200: z.array(UserSchema) },
       },
     },
-    async () => findAllUsers(),
+    async (request, reply) => findAllUsers(),
   );
 
   // GET /users/:id
